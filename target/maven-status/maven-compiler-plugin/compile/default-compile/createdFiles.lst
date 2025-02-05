@@ -1,0 +1,6 @@
+com\example\movierecommender\controller\MovieController.class
+com\example\movierecommender\util\api.class
+com\example\movierecommender\util\CsvUtil.class
+com\example\movierecommender\service\MovieService.class
+com\example\movierecommender\service\api.class
+com\example\movierecommender\MovieRecommenderApplication.class

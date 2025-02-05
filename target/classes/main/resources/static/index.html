@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Recommender</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🎬 Movie Recommender</h1>
+
+        <div class="input-group">
+            <label for="movieName">Enter Movie Name:</label>
+            <input type="text" id="movieName" placeholder="e.g., Inception">
+        </div>
+
+        <div class="input-group">
+            <label for="movieGenre">Select Genre:</label>
+            <select id="movieGenre">
+                <option value="action">Action</option>
+                <option value="adventure">Adventure</option>
+                <option value="animation">Animation</option>
+                <option value="biography">Biography</option>
+                <option value="crime">Crime</option>
+                <option value="family">Family</option>
+                <option value="fantasy">Fantasy</option>
+                <option value="film-noir">Film-Noir</option>
+                <option value="horror">Horror</option>
+                <option value="history">History</option>
+                <option value="mystery">Mystery</option>
+                <option value="romance">Romance</option>
+                <option value="scifi">Sci-Fi</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label for="count">Number of Recommendations:</label>
+            <input type="number" id="count" min="1" max="10" value="5">
+        </div>
+
+        <button id="recommendButton">Get Recommendations!</button>
+
+        <div id="loading" class="hidden">
+            <p class="loading-text">This process may take a few minutes! Please be patient :)</p>
+            <div class="spinner"></div>
+            <button id="playGame" class="hidden">Play a Game While You Wait</button>
+        </div>
+
+        <div id="results"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
